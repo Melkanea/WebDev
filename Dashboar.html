@@ -1,0 +1,91 @@
+
+
+
+<!-- BeABimbo Motivational Youtube -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DCwG0XrdOTs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Custom Brandynette Web control Center -->
+
+
+<div id="ntp-contents">
+    <div id="logo">
+      <!-- The logo that is displayed in the absence of a doodle. -->
+      <div id="logo-default" title="Google" class="show-logo"></div>
+      <!-- Logo displayed when theme prevents doodles. Doesn't fade. -->
+      <div id="logo-non-white" title="Google"></div>
+      <!-- A doodle, if any: its link and image. -->
+      <div id="logo-doodle">
+        <div id="logo-doodle-container">
+          <div id="logo-doodle-wrapper">
+            <button id="logo-doodle-button">
+              <img id="logo-doodle-image" tabindex="-1">
+            </button>
+          </div>
+        </div>
+        <iframe id="logo-doodle-iframe" scrolling="no"></iframe>
+        <!-- A spinner, prompting the doodle. Visible on NTPs with customized
+             backgrounds. -->
+        <button id="logo-doodle-notifier" title="Click to view today’s doodle">
+          <div class="outer ball0"><div class="inner"></div></div>
+          <div class="outer ball1"><div class="inner"></div></div>
+          <div class="outer ball2"><div class="inner"></div></div>
+          <div class="outer ball3"><div class="inner"></div></div>
+        </button>
+      </div>
+    </div>
+
+    <div id="fakebox-container">
+      <div id="fakebox">
+        <div class="search-icon"></div>
+        <div id="fakebox-text">Search Google or type a URL</div>
+        <input id="fakebox-input" autocomplete="off" tabindex="-1" type="url" aria-hidden="true">
+        <div id="fakebox-cursor"></div>
+        <button id="fakebox-microphone" class="microphone-icon" title="Search by voice"></button>
+      </div>
+    </div>
+
+    <div id="realbox-container" hidden="">
+      <div id="realbox-input-wrapper">
+        <div id="realbox-icon" class="search-icon"></div>
+        <input id="realbox" type="search" autocomplete="off" spellcheck="false" aria-live="polite" autofocus="">
+        <button id="realbox-microphone" class="microphone-icon" hidden=""></button>
+        <div id="realbox-matches"></div>
+      </div>
+    </div>
+
+    <div id="user-content">
+      <!-- Search suggestions will be inserted here. -->
+      <div id="most-visited">
+        <!-- The container for the tiles. The MV iframe goes in here. -->
+        <div id="mv-tiles"><iframe id="mv-single" name="mv-single" title="Most visited" src="chrome-search://most-visited/single.html?title=Most%20visited&amp;removeTooltip=Don't%20show%20on%20this%20page&amp;enableCustomLinks=1&amp;addLink=Add%20shortcut&amp;addLinkTooltip=Add%20shortcut&amp;editLinkTooltip=Edit%20shortcut"></iframe></div>
+      </div>
+    </div>
+
+    <!-- Notification shown when the tiles are modified. -->
+    <div id="mv-notice-container">
+      <div id="mv-notice" class="notice-hide" role="alert">
+        <span id="mv-msg">Shortcut removed</span>
+        <!-- Links in the notification. -->
+        <span id="mv-notice-links">
+          <span id="mv-undo" class="ripple" tabindex="0" role="button">Undo</span>
+          <span id="mv-restore" class="ripple" tabindex="0" role="button"></span>
+        </span>
+      </div>
+    </div>
+
+    <div id="attribution" style="display: none;"><div id="attribution-text">Theme created by</div></div>
+
+    <div id="error-notice-container">
+      <div id="error-notice" class="notice-hide" role="alert">
+        <span id="error-notice-icon"></span>
+        <span id="error-notice-msg"></span>
+        <span id="error-notice-link" class="ripple" tabindex="0" role="button"></span>
+      </div>
+    </div>
+
+    <div id="edit-bg" tabindex="0" role="button" class="ep-enhanced" aria-label="Customize this page" title="Customize this page">
+      <div id="edit-bg-icon"></div>
+      <span id="edit-bg-text">Customize</span>
+    </div>
+
+    <div id="custom-bg-attr"></div>
+  </div>

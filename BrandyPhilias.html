@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <iframe src="demo-page.html" name="myFrame"></iframe>
+  <p><a href="https://www.tutorialrepublic.com" target="myFrame">Open TutorialRepublic.com</a></p>
+
+  <h3>A demonstration of how to access an URL field</h3>
+
+  Homepage: <input type="url" id="myURL" value="http://www.google.com">
+
+  <p>Click the button to get the URL of the URL field.</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p><strong>Note:</strong> elements with type="url" are not supported in IE 9 (and earlier), or Safari.</p>
+
+  <p id="demo"></p>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myURL").value;
+    document.getElementById("demo").innerHTML = x;
+  }
+
+
+
+<p>Click the button to create an URL field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "url");
+  x.setAttribute("value", "http://www.google.com");
+  document.body.appendChild(x);
+}
+</script>
+
+</body>
+</html>

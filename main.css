@@ -1,0 +1,123 @@
+
+
+            body {
+                background-color: #4ecdc4;
+            }
+
+            .blog-title {
+                font-family: {TitleFont}, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+                font-weight: {TitleFontWeight};
+            }
+
+            .blog-title a,
+            .description,
+            .search-no-results,
+            .likes-no-likes,
+            .related-posts-wrapper > h2,
+            .loader .loader-bar,
+            .widget-title {
+                color: "#4ecdc4";
+            }
+
+            a {
+                color: "#f75dba";
+            }
+
+            #pagination a,
+            .nav-wrapper .nav-item .label {
+                color: "#f75dba";
+            }
+
+            #pagination a.next:after {
+                border-left-color: {AccentColor};
+            }
+
+            #pagination a.previous:after {
+                border-right-color: {AccentColor};
+            }
+
+            .header-image.cover {
+                background-image: url({HeaderImage});
+            }
+
+            .user-avatar {
+                background-color: "#f75dba";
+                border-color: "#4ecdc4";
+            }
+
+            .avatar-style-square .user-avatar {
+                -webkit-box-shadow: 0 0 0 4px {BackgroundColor};
+                box-shadow: 0 0 0 4px {BackgroundColor};
+            }
+
+            .no-header-image .logo-wrapper,
+            .contain-header-image .logo-wrapper {
+                color: {AccentColor};
+            }
+
+            /* Adjust logo for light accents on light backgrounds */
+            .light-on-light.no-header-image .logo-wrapper,
+            .light-on-light.contain-header-image .logo-wrapper {
+                color: #444;
+            }
+
+            /* Adjust logo for dark accents on dark backgrounds */
+            .dark-on-dark.no-header-image .logo-wrapper,
+            .dark-on-dark.contain-header-image .logo-wrapper {
+                color: #fff;
+            }
+
+            /* Sticky nav colors */
+            .nav-fixed {
+                background-color: {BackgroundColor};
+            }
+
+            .nav-responsive .inline-nav::after {
+                background-image: linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
+                background-image: -webkit-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
+                background-image: -moz-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
+                background-image: -ms-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
+                background-image: -o-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
+            }
+
+            @media screen and (max-device-width: 568px) {
+                .header-image.cover {
+                    background-image: url({HeaderImage-640});
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                }
+
+                .avatar-style-square .user-avatar {
+                    -webkit-box-shadow: 0 0 0 3px {BackgroundColor};
+                    -moz-box-shadow: 0 0 0 3px {BackgroundColor};
+                    box-shadow: 0 0 0 3px {BackgroundColor};
+                }
+
+            }
+/* Melkaneas CSS */
+.beabimbo {
+            border-style: solid;
+            border-width: 10px;
+            border-color: #ffffff;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+
+        }
+.bimbofication {
+            background-color: #4ecdc4;
+        }
+.brandyphilias{
+            border-style: solid;
+            border-width: 10px;
+            border-color: #f75dba;
+            padding: 5px 5px 5px 5px;
+            border-color: #f75dba;
+        }
+/* Melkanea CSS END */
+/*.MELKANEA_COLORS{
+Medium Tortoise: color3: "#4ecdc4";
+Hot Pink:        color2: "#f75dba";
+White:           color1: "#ffffff";
+Hot Pink:        color2: "#f75dba";
+Medium Tortoise: color3: "#4ecdc4";
+"PRIDE FLAG 5 STRIPES" */
