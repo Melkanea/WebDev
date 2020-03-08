@@ -1,8 +1,4 @@
-# HTML5-CSS3-JS
-Webmastering Repository
-
-Conect Brackets to Github
-Use Github as Repositoy
+# HTML5-CSS3-JS-PHP
+Web Development repo for usefull snippets & garbage of clipps
 
 
-need to find a way to host my config files
